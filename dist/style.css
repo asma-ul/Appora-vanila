@@ -626,6 +626,14 @@ p{
   grid-column: span 7 / span 7;
 }
 
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
+.col-span-12{
+  grid-column: span 12 / span 12;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -792,6 +800,10 @@ p{
   gap: 0.5rem;
 }
 
+.gap-12{
+  gap: 3rem;
+}
+
 .gap-y-4{
   row-gap: 1rem;
 }
@@ -803,10 +815,6 @@ p{
 
 .gap-y-8{
   row-gap: 2rem;
-}
-
-.gap-y-6{
-  row-gap: 1.5rem;
 }
 
 .gap-x-4{
@@ -1022,11 +1030,6 @@ p{
   line-height: 1.75rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-normal{
   font-weight: 400;
 }
@@ -1116,6 +1119,12 @@ p{
   color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+}
+
 @media (min-width: 768px){
   .md\:visible{
     visibility: visible;
@@ -1155,6 +1164,10 @@ p{
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
   }
 
   .md\:gap-y-0{
@@ -1199,11 +1212,6 @@ p{
     padding-bottom: 4rem;
   }
 
-  .md\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1234,6 +1242,10 @@ p{
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .lg\:mt-8{
     margin-top: 2rem;
   }
